@@ -165,7 +165,7 @@
 				markdown: { breaks: true, gfm: true, renderer: customRenderer },
 				customcontrols: {
 					controls: [
-						{ icon: '<i class="fa fa-pen"></i>', title: 'Toggle notes canvas (C)', action: 'RevealChalkboard.toggleNotesCanvas();' }
+						{ icon: '<i class="fa fa-pen" style="color:#444"></i>', title: 'Toggle notes canvas (C)', action: 'RevealChalkboard.toggleNotesCanvas();' }
 					]
 				},
 				controlsBackArrows: 'hidden',
@@ -173,6 +173,8 @@
 				history: true,
 				hideInactiveCursor: true,
 				hideCursorTime: 5000,
+				mouseWheel: true,
+				transition: 'fade',
 				plugins: [RevealChalkboard, RevealCustomControls, RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
 			});
 		} catch (err) {
